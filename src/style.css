@@ -1,0 +1,19 @@
+
+
+.container{
+    border: 1px black solid;
+    width: 70%;
+}
+
+.currentTemperature{
+font-size: 40px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.source{
+   text-align: center;
+}

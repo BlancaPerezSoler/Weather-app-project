@@ -4,16 +4,37 @@
     border: 1px black solid;
     width: 70%;
 }
+.emoji{
+    font-size: 80px;
+    text-align: center;
+    margin-top:35px;
+}
 
+.city{
+    margin-top: 25px;
+}
+.temperature{
+    text-align: center;
+}
 .currentTemperature{
-font-size: 40px;
+font-size: 60px;
 
 }
 
+
 ul{
     list-style: none;
+    
 }
 
 .source{
    text-align: center;
+}
+
+.units{
+    position: relative;
+    right: -30px;
+    top: -80px;
+    font-size: 18px;
+    font-weight: bold;
 }

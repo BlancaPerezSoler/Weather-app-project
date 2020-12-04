@@ -17,14 +17,18 @@
 <div class="col-4">
     <h1 class="city">Amsterdam</h1>
     
-        <div> Clear sky</div>
-        <div>Thursday 18.00</div>
+        <div class="description-weather"> </div>
+        <div id="date"></div>
     
 </div>
     
 
 <div class="col-4">
-    <div class="emoji">⛅</div>
+    <img 
+    src="http://www.gstatic.com/images/icons/material/apps/weather/2x/heavy_rain_light_color_96dp.png"  
+    class="emoji" 
+    id="icon"
+    />
 </div>
 <div class="col-4 temperature">
     <p>
@@ -35,8 +39,8 @@
     </div>
     </p>
     <ul>
-        <li><em>Humidity</em> : 59%</li>
-        <li><em> wind</em>: 20 km/h</li>
+        <li><em>Humidity</em> : <span id="humidity">59</span>%</li>
+        <li><em> wind</em>: <span id=windSpeed>20</span>km/h</li>
     </ul>
     
 </div>
@@ -45,7 +49,7 @@
 </div>
     
 </div>
-<p class="source">
+<p class="source-link">
 <a  href="https://github.com/BlancaPerezSoler/Weather-app-project" class="open-source">Open source link</a> coded by Blanca Perez Soler </p>
 
     <script src="src/app.js"></script>

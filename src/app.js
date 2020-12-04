@@ -15,7 +15,7 @@ function showWeather(response){
     windSpeed.innerHTML=Math.round(response.data.wind.speed);
     humidity.innerHTML=response.data.main.humidity;
     temperatureElement.innerHTML=Math.round(response.data.main.temp);
-    emojiElement.getAttribute("src",`https://openweathermap.org/img/wn/${code}@2x.png`);
+    emojiElement.setAttribute("src",`https://openweathermap.org/img/wn/${code}@2x.png`);
 
 }
 
@@ -30,7 +30,7 @@ function formatDate(timestrap){
     if (minutes<10){
         minutes=`0${minutes}`;
     }
-    let days=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    let days=["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
      day=days[date.getDay()]; 
     return `${day} ${hours} : ${minutes}`
    

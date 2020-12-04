@@ -1,47 +1,64 @@
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-
-ul{
-    list-style: none;
-    
+ul {
+  list-style: none;
 }
 
-.container{
-    border: 1px black solid;
-    width: 60%;
-
+#city-input {
+ text-align: center;
 }
 
-.description-weather:first-letter{
-    text-transform: capitalize;
-}
-.emoji{
-    font-size: 80px;
+.placeholder{
     text-align: center;
-    margin-top:35px;
+    height: 37px;
+    margin-top: 15px;
 }
 
-.city{
-    margin-top: 25px;
-}
-.temperature{
-    text-align: center;
-}
-.currentTemperature{
-font-size: 60px;
-
-}
-
-.source-link{
-   text-align: center;
-}
-
-.units{
+.btn-primary{
+    background-color: blueviolet;
+    border: blueviolet;
     position: relative;
-    right: -53px;
-    top: -80px;
-    font-size: 18px;
-    font-weight: bold;
+    top: -2px;
+}
+.btn-primary:hover{
+background-color:white;
+color: blueviolet;
+border: 1px solid blueviolet;
+}
+.container {
+  border: 1px black solid;
+  width: 60%;
+}
+
+.description-weather:first-letter {
+  text-transform: capitalize;
+}
+.emoji {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.city {
+  margin-top: 25px;
+}
+.temperature {
+  text-align: center;
+}
+.currentTemperature {
+  font-size: 60px;
+}
+
+.source-link {
+  text-align: center;
+}
+
+.units {
+  position: relative;
+  right: -53px;
+  top: -80px;
+  font-size: 18px;
+  font-weight: bold;
 }

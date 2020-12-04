@@ -15,7 +15,7 @@ function showWeather(response){
     windSpeed.innerHTML=Math.round(response.data.wind.speed);
     humidity.innerHTML=response.data.main.humidity;
     temperatureElement.innerHTML=Math.round(response.data.main.temp);
-    emojiElement.getAttribute("src",`http://openweathermap.org/img/wn/${code}@2x.png`);
+    emojiElement.getAttribute("src",`https://openweathermap.org/img/wn/${code}@2x.png`);
 
 }
 

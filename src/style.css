@@ -9,23 +9,20 @@ ul {
 
 #city-input {
  text-align: center;
+ margin-top: 10px;
 }
 .container {
   border: 1px black solid;
   width: 60%;
   
 }
-.placeholder{
-    text-align: center;
-    height: 37px;
-    margin-top: 15px;
-}
+
 
 .btn-primary{
     background-color: blueviolet;
     border: blueviolet;
-    position: relative;
-    top: -2px;
+    width: 100px;
+    
 }
 .btn-primary:hover{
 background-color:white;

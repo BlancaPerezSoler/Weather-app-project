@@ -37,8 +37,25 @@ function formatDate(timestrap){
 }
 
 
-let apiKey= "bf3b0a962c0f2c5a4bea4daa33ad2c1d"
-let city="Amsterdam"
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function searchCity(city){
 
+let apiKey= "bf3b0a962c0f2c5a4bea4daa33ad2c1d"
+let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(showWeather);
+}
+
+
+function displayNewCity(event){
+    event.preventDefault();
+    let cityElement= document.querySelector("#city-element");
+    let newCity= document.querySelector("#city-new");
+    cityElement.innerHTML=newCity.value;
+    
+    searchCity(newCity.value);
+}
+
+
+let cityInput= document.querySelector("#city-input");
+cityInput.addEventListener("submit", displayNewCity);
+
+searchCity("Amsterdam");

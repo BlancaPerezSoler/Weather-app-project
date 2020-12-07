@@ -68,11 +68,18 @@ function convertToFahrenheid(event){
     temperatureElement.innerHTML= Math.round(fahrenheidTemperature);   
 }
 
-let celciusTemperature=null;
+function convertToCelcius(event){
+    event.preventDefault();
+    let temperatureElement= document.querySelector(".currentTemperature");
+    temperatureElement.innerHTML= Math.round(celciusTemperature);
+}
 
 let fahrenheidUnits=document.querySelector("#fahrenheidUnits");
 fahrenheidUnits.addEventListener("click", convertToFahrenheid);
 
+let celciusUnits=document.querySelector("#celciusUnits");
+celciusUnits.addEventListener("click", convertToCelcius);
 
+let celciusTemperature=null;
 
 searchCity("Amsterdam");

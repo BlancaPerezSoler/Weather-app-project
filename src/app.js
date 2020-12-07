@@ -8,6 +8,8 @@ function showWeather(response){
     let humidity=document.querySelector("#humidity");
     let temperatureElement=document.querySelector(".currentTemperature")
     let code=response.data.weather[0].icon;
+
+    celciusTemperature=response.data.main.temp;
     
     cityElement.innerHTML=response.data.name;
     dateElement.innerHTML=formatDate(response.data.dt*1000); 
@@ -57,5 +59,20 @@ function displayNewCity(event){
 
 let cityInput= document.querySelector("#city-input");
 cityInput.addEventListener("submit", displayNewCity);
+
+
+function convertToFahrenheid(event){
+    event.preventDefault();
+    let fahrenheidTemperature=  (celciusTemperature*9/5)+32;
+    let temperatureElement= document.querySelector(".currentTemperature");
+    temperatureElement.innerHTML= Math.round(fahrenheidTemperature);   
+}
+
+let celciusTemperature=null;
+
+let fahrenheidUnits=document.querySelector("#fahrenheidUnits");
+fahrenheidUnits.addEventListener("click", convertToFahrenheid);
+
+
 
 searchCity("Amsterdam");

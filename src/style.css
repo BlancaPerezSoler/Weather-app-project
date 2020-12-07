@@ -17,7 +17,6 @@ ul {
   
 }
 
-
 .btn-primary{
     background-color: blueviolet;
     border: blueviolet;
@@ -63,6 +62,15 @@ border: 1px solid blueviolet;
   top: -100px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.active{
+  color: black;
+  cursor: default;
+}
+
+.active:hover{
+  text-decoration: none;
 }
 
 .humidity-wind{

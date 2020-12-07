@@ -66,12 +66,16 @@ function convertToFahrenheid(event){
     let fahrenheidTemperature=  (celciusTemperature*9/5)+32;
     let temperatureElement= document.querySelector(".currentTemperature");
     temperatureElement.innerHTML= Math.round(fahrenheidTemperature);   
+    celciusUnits.classList.remove("active");
+    fahrenheidUnits.classList.add("active");
 }
 
 function convertToCelcius(event){
     event.preventDefault();
     let temperatureElement= document.querySelector(".currentTemperature");
     temperatureElement.innerHTML= Math.round(celciusTemperature);
+    fahrenheidUnits.classList.remove("active");
+    celciusUnits.classList.add("active");
 }
 
 let fahrenheidUnits=document.querySelector("#fahrenheidUnits");

@@ -79,3 +79,7 @@ border: 1px solid blueviolet;
    top: 40px;
    right: 20px;
 }
+
+.forecast-next-hours{
+  text-align: center;
+}

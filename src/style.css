@@ -65,6 +65,7 @@ border: 1px solid blueviolet;
 }
 
 .active{
+  font-size: 22px;
   color: black;
   cursor: default;
 }

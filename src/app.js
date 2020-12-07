@@ -47,6 +47,7 @@ function formatHours(timestamp){
 function showForecast(response){
 console.log(response.data);
 let forecastElement=document.querySelector(".weather-forecast");
+forecastElement.innerHTML=null;
 let forecast= null;
 
 for (let index = 0; index <= 5; index++) {

@@ -36,6 +36,7 @@ border: 1px solid blueviolet;
 .emoji {
   position: relative;
   top: -12px;
+  right: -50px;
   padding-bottom: 30px;
   width: 140px;
   height: 170px;
@@ -80,6 +81,38 @@ border: 1px solid blueviolet;
    right: 20px;
 }
 
+.text-forecast{
+  text-align: center;
+  text-decoration: underline;
+}
+.forecast-container{
+ 
+  border: 1px black double;
+  text-align: center;
+  margin: 20px 120px 15px 120px;
+}
+
+.weather-forecast{
+   margin-top: 70px;
+  
+}
+
 .forecast-next-hours{
   text-align: center;
+}
+
+.hours{
+  text-align: right;
+}
+
+.emoji-per-hour{
+  position: relative;
+  top: -20px;
+  padding-bottom: 30px;
+  width: 140px;
+  height: 170px;
+}
+
+.temperature-max-min{
+  text-align: left;
 }

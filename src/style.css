@@ -1,6 +1,7 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  
+  color: #36393d;
+  background-color: #fdf7f6;
 }
 
 ul {
@@ -10,27 +11,54 @@ ul {
 #city-input {
  text-align: center;
  margin-top: 10px;
+ padding-top: 15px;
 }
 .container {
+  background-color: #b8bce9;
   border: 1px black solid;
-  width: 60%;
-  
+  border-radius: 40px;
+  width: 60%;  
+}
+
+.second-container{
+  margin-left: 20px;
 }
 
 .btn-primary{
-    background-color: blueviolet;
-    border: blueviolet;
+    background-color: rgb(13, 46, 228);
+    border:rgb(13, 46, 228);
     width: 100px;
+    transition: all 200ms ease-in-out;
     
 }
 .btn-primary:hover{
 background-color:white;
-color: blueviolet;
-border: 1px solid blueviolet;
+color: rgb(13, 46, 228);
+
 }
 
+.current-date-row{
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.current-date{
+  text-align: right;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.description-weather{
+  font-size: 25px;
+}
+
+#city-element{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .description-weather:first-letter {
   text-transform: capitalize;
+  
 }
 
 .emoji {
@@ -44,6 +72,7 @@ border: 1px solid blueviolet;
 
 .city {
   margin-top: 25px;
+  font-size: 80px;
 }
 .temperature {
   text-align: center;
@@ -81,19 +110,23 @@ border: 1px solid blueviolet;
    right: 20px;
 }
 
+.hours.emoji-per-hour.temperature-max-min{
+  padding-bottom: 15px;
+}
+
 .text-forecast{
   text-align: center;
-  text-decoration: underline;
+  margin-bottom: 0;
 }
 .forecast-container{
  
-  border: 1px black double;
   text-align: center;
-  margin: 20px 120px 15px 120px;
+  margin: 0 120px 15px 120px;
 }
 
 .weather-forecast{
    margin-top: 70px;
+   
   
 }
 
@@ -108,9 +141,8 @@ border: 1px solid blueviolet;
 .emoji-per-hour{
   position: relative;
   top: -20px;
-  padding-bottom: 30px;
   width: 140px;
-  height: 170px;
+  height: 100px;
 }
 
 .temperature-max-min{

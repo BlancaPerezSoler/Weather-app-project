@@ -7,10 +7,13 @@ body {
 ul {
   list-style: none;
 }
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 
 #city-input {
  text-align: center;
- margin-top: 10px;
+ margin: 10px 0 0 0;
  padding-top: 15px;
 }
 .container {
@@ -38,14 +41,14 @@ color: rgb(13, 46, 228);
 }
 
 .current-date-row{
-  margin-top: 40px;
+  margin: 40px 0 0 0;
   padding-top: 20px;
   padding-bottom: 40px;
 }
 .current-date{
   text-align: right;
   font-size: 20px;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 .description-weather{
@@ -71,7 +74,7 @@ color: rgb(13, 46, 228);
 }
 
 .city {
-  margin-top: 25px;
+  margin: 25px 0 0 0;
   font-size: 80px;
 }
 .temperature {
@@ -125,7 +128,7 @@ color: rgb(13, 46, 228);
 }
 
 .weather-forecast{
-   margin-top: 70px;
+   margin: 70px 0 0 0;
    
   
 }

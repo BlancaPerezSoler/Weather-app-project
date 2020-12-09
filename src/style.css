@@ -14,7 +14,7 @@ ul {
  padding-top: 15px;
 }
 .container {
-  background: linear-gradient(90deg,#D4D6F1, whitesmoke, whitesmoke, #D4D6F1);
+  background: linear-gradient(90deg,#D4D6F1, rgb(236, 231, 231), rgb(236, 231, 231), #D4D6F1);
   border: 3px #BEC2EF solid;
   border-radius: 40px;
   width: 60%;  

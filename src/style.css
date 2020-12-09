@@ -1,7 +1,7 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #36393d;
-  background-color: #fdf7f6;
+  background:linear-gradient(90deg,#a4aaec,whitesmoke, whitesmoke,#a4aaec ) ;
 }
 
 ul {
@@ -14,8 +14,8 @@ ul {
  padding-top: 15px;
 }
 .container {
-  background-color: #b8bce9;
-  border: 1px black solid;
+  background: linear-gradient(90deg,#D4D6F1, whitesmoke, whitesmoke, #D4D6F1);
+  border: 3px #BEC2EF solid;
   border-radius: 40px;
   width: 60%;  
 }

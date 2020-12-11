@@ -29,23 +29,32 @@
 
     <form id="city-input">
 <div class="row">
-<div class="col-10"> <input type="search" placeholder="Search city..." size="50" class="form-control" id="city-new" autocomplete="off"/></div>
-<div class="col-2"><input type="submit" class="btn btn-primary"value="Search"></div>
+<div class="col-10 col-md-9 mb-3 mb-md-0"> 
+    <input type="search" placeholder="Search city..." 
+    size="50" class="form-control" 
+    id="city-new" autocomplete="off"/>
+</div>
+<div class="col-2 com-md-3">
+    <input type="submit" 
+    class="btn btn-primary"
+    value="Search">
+</div>
 </div>
     </form>
-
+<div class="row">
+    <div class="col">
 <div class="city-name">
     <h1 class="city" id="city-element">Amsterdam</h1>
     <div class="description-weather"> </div>
-        
-    
+  </div>      
+ </div>   
 </div>
     <div class="row current-date-row">
-<div class="col-4 current-date">
+<div class="col-4 col-md-4 current-date">
        Last updated: <div id="date"><br> </div>
 </div>
 
-<div class="col-3">
+<div class="col-6 col-md-3">
     <div class="emoji-container">
     <img 
     src="https://www.gstatic.com/images/icons/material/apps/weather/2x/heavy_rain_light_color_96dp.png"  
@@ -54,7 +63,7 @@
     />
 </div>
 </div>
-<div class="col-2 temperature">
+<div class="col-6 col-md-2 temperature">
     
     <div class="currentTemperature"> 
     </div> 
@@ -64,7 +73,7 @@
     <a  href="#" id="fahrenheidUnits">F</a>
     </div>
   </div>  
- <div class="col-3 humidity-wind">   
+ <div class="col-6 col-md-3 humidity-wind">   
     <ul>
         <li><em>Humidity</em> : <span id="humidity">59</span>%</li>
         <li><em> wind</em>: <span id=windSpeed>20</span>km/h</li>
@@ -77,16 +86,13 @@
     <p class="text-forecast">Forecast for the next hours</p>
     <div class="forecast-container">
         
-    <div class="row weather-forecast">
-        
+    <div class="row weather-forecast text-center"></div>
     </div>
-
-    </div>
-</div>
-    
+</div>   
 </div>
 <p class="source-link">
-<a  href="https://github.com/BlancaPerezSoler/Weather-app-project" class="open-source" target="_blank">Open source link</a> coded by Blanca Perez Soler </p>
+<a  href="https://github.com/BlancaPerezSoler/Weather-app-project" 
+class="open-source" target="_blank">Open source link</a> coded by Blanca Perez Soler </p>
 
     <script src="src/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

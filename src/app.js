@@ -53,12 +53,13 @@ let forecast= null;
 for (let index = 0; index <= 5; index++) {
     forecast=response.data.list[index];
     forecastElement.innerHTML +=`
-       <div class="col-4 hours">${formatHours(forecast.dt*1000)}</div>
-        <div class="col-4 emoji-per-hour"> 
+       <div class="col-12 col-md-2 mb-3 mb-md-0">
+       <div class="col-12">${formatHours(forecast.dt*1000)}</div>
+        <div class="col-12"> 
         <img 
         src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width="80" alt="">
         </div>
-        <div class="col-4 temperature-max-min"> ${Math.round(forecast.main.temp_max)}ºC/${Math.round(forecast.main.temp_min)}ºC </div>`
+        <div class="col-12"> ${Math.round(forecast.main.temp_max)}ºC/${Math.round(forecast.main.temp_min)}ºC </div>`
 
 }
 }

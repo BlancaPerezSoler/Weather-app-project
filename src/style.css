@@ -20,11 +20,11 @@ ul {
   background: linear-gradient(90deg,#D4D6F1, rgb(236, 231, 231), rgb(236, 231, 231), #D4D6F1);
   border: 3px #BEC2EF solid;
   border-radius: 40px;
-  width: 60%;  
+   
 }
 
 .second-container{
-  margin-left: 20px;
+ 
 }
 
 .btn-primary{
@@ -66,8 +66,6 @@ color: rgb(13, 46, 228);
 
 .emoji {
   position: relative;
-  top: -12px;
-  right: -50px;
   padding-bottom: 30px;
   width: 140px;
   height: 170px;
@@ -75,7 +73,7 @@ color: rgb(13, 46, 228);
 
 .city {
   margin: 25px 0 0 0;
-  font-size: 80px;
+  
 }
 .temperature {
   text-align: center;
@@ -122,32 +120,20 @@ color: rgb(13, 46, 228);
   margin-bottom: 0;
 }
 .forecast-container{
- 
   text-align: center;
-  margin: 0 120px 15px 120px;
+  margin: 50px 0;
 }
 
-.weather-forecast{
-   margin: 70px 0 0 0;
-   
-  
+.forecast-container img {
+  max-width: 75px;
 }
 
-.forecast-next-hours{
-  text-align: center;
-}
-
-.hours{
-  text-align: right;
-}
-
-.emoji-per-hour{
-  position: relative;
-  top: -20px;
-  width: 140px;
-  height: 100px;
-}
-
-.temperature-max-min{
-  text-align: left;
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+​
+  .city {
+    font-size: 80px;
+  }
 }

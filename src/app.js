@@ -57,7 +57,7 @@ for (let index = 0; index <= 5; index++) {
        <div class="col-12">${formatHours(forecast.dt*1000)}</div>
         <div class="col-12"> 
         <img 
-        src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width="80" alt="">
+        src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width="100%" alt="">
         </div>
         <div class="col-12"> ${Math.round(forecast.main.temp_max)}ºC/${Math.round(forecast.main.temp_min)}ºC </div>`
 
